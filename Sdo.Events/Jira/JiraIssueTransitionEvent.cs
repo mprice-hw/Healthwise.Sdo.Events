@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Sdo;
+using Healthwise.Sdo;
 
-namespace Sdo.Events.Jira
+namespace Healthwise.Sdo.Events.Jira
 {
-    internal class JiraIssueTransitionEvent : EventBase
+    public class JiraIssueTransitionEvent : EventBase
     {
         public JiraIssue Issue { get; set; }
     }

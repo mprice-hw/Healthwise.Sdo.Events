@@ -6,9 +6,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.Threading.Tasks;
 
-namespace Sdo.Events
+namespace Healthwise.Sdo.Events
 {
-    internal class EventBase
+    public class EventBase
     {
         [JsonProperty("source")]
         public string Source { get; set; }

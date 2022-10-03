@@ -5,9 +5,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.Threading.Tasks;
 
-namespace Sdo.Events.Jira
+namespace Healthwise.Sdo.Events.Jira
 {
-    internal class JiraStatusCategory
+    public class JiraStatusCategory
     {
         [JsonProperty("id")]
         public int Id { get; set; }

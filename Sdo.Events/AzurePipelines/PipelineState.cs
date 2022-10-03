@@ -1,7 +1,10 @@
-﻿enum PipelineState
+﻿namespace Healthwise.Sdo.Events.AzurePipelines
 {
-    Canceling,
-    Completed,
-    InProgress,
-    Uknown
+    public enum PipelineState
+    {
+        Canceling,
+        Completed,
+        InProgress,
+        Uknown
+    }
 }

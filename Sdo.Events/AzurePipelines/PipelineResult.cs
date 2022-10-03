@@ -1,7 +1,10 @@
-﻿enum PipelineResult
+﻿namespace Healthwise.Sdo.Events.AzurePipelines
 {
-    Canceled,
-    Failed,
-    Succeeded,
-    Uknown,
+    public enum PipelineResult
+    {
+        Canceled,
+        Failed,
+        Succeeded,
+        Uknown,
+    }
 }

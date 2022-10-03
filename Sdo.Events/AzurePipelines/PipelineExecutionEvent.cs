@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Converters;
 
-namespace Sdo.Events.AzurePipelines
+namespace Healthwise.Sdo.Events.AzurePipelines
 {
-    internal class PipelineExecutionEvent : EventBase
+    public class PipelineExecutionEvent : EventBase
     {
         [JsonProperty("name")]
         public string PipelineName { get; set; }

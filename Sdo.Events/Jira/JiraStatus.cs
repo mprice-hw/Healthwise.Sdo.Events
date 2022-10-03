@@ -4,11 +4,11 @@ using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.Threading.Tasks;
-using Sdo.Events.Jira;
+using Healthwise.Sdo.Events.Jira;
 
-namespace Sdo.Events.Jira
+namespace Healthwise.Sdo.Events.Jira
 {
-    internal class JiraStatus
+    public class JiraStatus
     {
         [JsonProperty("id")]
         public int Id { get; set; }
