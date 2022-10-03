@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32916.344
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Healthwise.Sdo.Events", "sdo.events\Healthwise.Sdo.Events.csproj", "{0986D8DA-2370-4F37-8CC4-A2D4D8F69887}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Healthwise.Sdo.Events", "Healthwise.Sdo.Events\Healthwise.Sdo.Events.csproj", "{0986D8DA-2370-4F37-8CC4-A2D4D8F69887}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
