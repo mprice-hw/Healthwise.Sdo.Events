@@ -16,13 +16,6 @@ jobs:
         with:
           dotnet-version: 6.0.x
 
-      #- name: Configure NuGet sources
-      #  run: |
-      #    dotnet nuget add source https://nuget.pkg.github.com/mprice-hw/index.json -n "mprice-hw GitHub Packages" -u ${{ secrets.BUILD_SYSTEM_LOGIN }} --store-password-in-clear-text -p ${{ secrets.BUILD_SYSTEM_PAT }}
-      #  env:
-      #    BUILD_SYSTEM_LOGIN: ${{ secrets.BUILD_SYSTEM_LOGIN }}
-      #    BUILD_SYSTEM_PAT: ${{ secrets.BUILD_SYSTEM_PAT }}
-
       - name: Restore dependencies
         run: dotnet restore
 
@@ -31,7 +24,7 @@ jobs:
           echo ${GITHUB_RUN_NUMBER}
           dotnet build --no-restore --configuration Release -p:buildnumber=${GITHUB_RUN_NUMBER}
 
-      #- name: Test Healthwise.BackEndEvents
+      #- name: Test Healthwise.Sdo.Events
       #  run: dotnet test --no-build --configuration Release -p:buildnumber=${GITHUB_RUN_NUMBER} --verbosity normal
 
       - name: Create Nuget Package
