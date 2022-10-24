@@ -12,7 +12,7 @@ namespace Healthwise.Sdo.Events.AzurePipelines
     {
         [Required]
         [JsonProperty("name")]
-        public string PipelineName { get; set; }
+        public string Name { get; set; }
 
         [Required]
         [JsonProperty("runId")]
