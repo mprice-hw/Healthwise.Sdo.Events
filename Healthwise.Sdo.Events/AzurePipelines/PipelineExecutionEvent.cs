@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Converters;
 using System.ComponentModel.DataAnnotations;
+using Healthwise.Sdo.Events.Validation;
 
 namespace Healthwise.Sdo.Events.AzurePipelines
 {
@@ -15,6 +16,7 @@ namespace Healthwise.Sdo.Events.AzurePipelines
         public string Name { get; set; }
 
         [Required]
+        [MinValue(1)]
         [JsonProperty("runId")]
         public int RunId { get; set; }
 
